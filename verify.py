@@ -5,7 +5,6 @@ import time
 import re
 # Only works 1-2 times before rate limit
 # if someone is smart help me out with making it w proxies
-# DC - @sonicman0358
 # statements --- DO NOT EDIT
 console = Console(highlight=False)
 
@@ -110,3 +109,4 @@ for cookie in cookies_list:
             verify_ticket(session, csrf_token, ticket, cookie)
     except Exception as e:
         cprint("red", f"An error occurred: {e}")
+
